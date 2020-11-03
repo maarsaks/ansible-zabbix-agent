@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - name: Update Zabbix Agent on the server
+      zabbix_agent_update:
+      register: result
